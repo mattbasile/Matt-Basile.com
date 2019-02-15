@@ -22,12 +22,18 @@ export default (state = initialState, { type, payload }) => {
       error: null,
       isFetchingArticles: true
     };
-    case FETCH_ARTICLES_START:
+    case FETCH_ARTICLES_SUCCESS:
+    console.log(payload)
+    const articlesList = payload.items.filter(article => {
+      return article.categories.length > 0 ? article : null
+      }
+    )
+    console.log(articlesList)
     return{
       ...state,
       error: null,
       isFetchingArticles: false,
-      articles: payload
+      articles: articlesList
     };
     case FETCH_ARTICLES_START:
     return{

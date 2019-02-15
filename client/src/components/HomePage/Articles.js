@@ -22,10 +22,10 @@ class Articles extends Component {
           <h3 className="text-3xl" >Articles</h3>
           <p className="text-2xl">To help retain my studies I've been sharing blog posts on Medium.</p>
           <p className="text-2xl">Here are all my posts up to date:</p>
-         <div className="flex mt-8">
-             <Card isArticle={this.state.isArticle}/>
-             <Card isArticle={this.state.isArticle}/>
-             <Card isArticle={this.state.isArticle}/>
+         <div className="flex mt-8 flex-wrap">
+         {this.props.articles.map( article =>{
+            return <Card isArticle={this.state.isArticle} card={article}/>
+        })}
          </div>
         </div>
         </div>
@@ -34,7 +34,7 @@ class Articles extends Component {
 }
 
 const mapStateToProps = (state) => ({
-    
+    articles: state.articles
 })
 
 const mapDispatchToProps = {
