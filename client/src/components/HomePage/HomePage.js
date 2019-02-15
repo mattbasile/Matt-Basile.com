@@ -13,6 +13,7 @@ export default class HomePage extends Component {
         <Header/>
         <Profile />
         <Projects />
+        <Articles />
       </div>
     )
   }
