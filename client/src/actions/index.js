@@ -2,13 +2,16 @@ import axios from 'axios'
 
 
 
-export const FETCH_DATA_START = "FETCH_DATA_START";
-export const FETCH_DATA_SUCCESS = "FETCH_DATA_SUCCESS";
-export const FETCH_DATA_FAIL = "FETCH_DATA_FAIL"; 
+export const FETCH_ARTICLES_START = "FETCH_ARTICLES_START";
+export const FETCH_ARTICLES_SUCCESS = "FETCH_ARTICLES_SUCCESS";
+export const FETCH_ARTICLES_FAIL = "FETCH_ARTICLES_FAIL"; 
 
 
-export const getData = (data => dispatch =>{
-    dispatch({type: FETCH_DATA_SUCCESS, payload: data});
+export const getArticles = (article => dispatch =>{
+    dispatch({type: FETCH_ARTICLES_START});
+    axios.get("https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fmedium.com%2Ffeed%2F%40mattbasile")
+    .then(res => dispatch({type: FETCH_ARTICLES_SUCCESS, payload: res.data}))
+    .catch(err => console.log(err))
   })
 
   

@@ -1,13 +1,19 @@
 
 import React, { Component } from 'react'
+import {connect} from 'react-redux'
 import Card from './Card'
+import {getArticles} from '../../actions'
 
-export default class Articles extends Component {
+
+class Articles extends Component {
     constructor(props){
         super(props);
         this.state={
             isArticle: true,
         }
+    }
+    componentDidMount(){
+        this.props.getArticles();
     }
   render() {
     return (
@@ -26,3 +32,16 @@ export default class Articles extends Component {
     )
   }
 }
+
+const mapStateToProps = (state) => ({
+    
+})
+
+const mapDispatchToProps = {
+  getArticles,
+}
+
+export default connect(
+    mapStateToProps,
+    mapDispatchToProps,
+  )(Articles)

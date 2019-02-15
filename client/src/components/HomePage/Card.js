@@ -1,7 +1,7 @@
 import React from 'react'
 import Logo1 from '../../logo-white-500.png'
 
-export default function Project(props) {
+export default function Card(props) {
   return (
     <>
        <div className="border shadow-md card">
