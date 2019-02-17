@@ -27,3 +27,12 @@
 .text-overflow{
     text-overflow: ellipsis;
 }
+
+.header-font{
+  font-family: "Yantramanav";
+  font-size: 150px;
+}
+.sub-header{
+    font-family: "Yantramanav";
+    font-size: 40px;
+}

@@ -25,7 +25,8 @@
             "description": "What I did during Guidr",
             "WIL": "what I learned over that time",
             "tools": ["JSX", "TailwindCSS", "CSS", "Javascript", "React", "Redux", "Git", "Netlify"],
-            "screenshots": []
+            "screenshots": [],
+            "thumbnail": "../imgs/logo-final.png"
         },
         {
             "title": "Pokedex Redux",
@@ -35,7 +36,8 @@
             "description": "What I did during Pokedex",
             "WIL": "what I learned over that time",
             "tools": ["JSX", "TailwindCSS", "CSS", "Javascript", "React", "Redux", "Git", "Netlify"],
-            "screenshots": []
+            "screenshots": [],
+            "thumbnail": "../imgs/logo-final.png"
         },
         {
             "title": "DBZ Battles",
@@ -45,7 +47,8 @@
             "description": "What I did during DBZ Battles",
             "WIL": "what I learned over that time",
             "tools": [ "HTML5", "CSS", "LESS", "Javascript", "Git", "Github Pages"],
-            "screenshots": []
+            "screenshots": [],
+            "thumbnail": "../imgs/logo-final.png"
         }
 
     ]
