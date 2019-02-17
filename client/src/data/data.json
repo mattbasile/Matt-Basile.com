@@ -1,8 +1,8 @@
 {
-    "portfolio":[
+    "profile":[
         {
         "title": "Developer",
-        "WID": "A description of what i do as a dev",
+        "WID": "Currently enrolled as a Full Stack Development student at Lambda School I spend hours a day learning new technologies to add to my development stack. I've fallen in love with the process of starting a week knowing nothing, grappling with the concept and then finishing my week knowing more about this topic than I could have ever imagined. I look forward to continuing this passion for problem solving and self growth as my career as a developer grows.  ",
         "tools": ["HTML5", "CSS3", "CSS Preprocessors", "Javascript", "React", "Redux",  "Node", "Express", "Git", "Netlify", "Heroku"]
         },
         {

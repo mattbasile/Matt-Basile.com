@@ -9,7 +9,7 @@ import{
 
 const initialState = {
   projects: data.projects,
-  portfolio: data.portfolio,
+  profile: data.profile,
   articles: [],
   error: null,
   isFetchingArticles: true,

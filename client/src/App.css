@@ -1,6 +1,9 @@
 .h-75 {
     height: 90vh;
 }
+.w-90{
+ width:90%;
+}
 .active{
     background-color: white;
     color: #3490DC;
