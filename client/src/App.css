@@ -52,7 +52,7 @@
 }
 .card-container{
     position: relative;
-    height: 250px;
+    height: 350px;
     width: 100%;
 }
 
@@ -90,3 +90,34 @@
     transform: rotateY(180deg);
 }
  
+
+/* Projects */
+.project-container{
+  height: 650px;
+}
+.project-img-container{
+  height: 450px;
+}
+.project-cubes{
+    height: 200px;
+}
+.see-more{
+    height: 200px; 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.see-more button{
+    width: 65%;
+}
+
+.project-description{
+    justify-content: space-evenly;
+    height: 450px;
+
+}
+.project-description p{
+    line-height: 3rem;
+    padding: 0 30px;
+}

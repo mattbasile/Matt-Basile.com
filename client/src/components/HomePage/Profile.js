@@ -23,7 +23,7 @@ class Profile extends Component {
  
   render() {
     return (
-      <div className="flex w-3/5 mx-auto my-24">
+      <div className="flex w-4/5 mx-auto my-24">
       <div className="flex flex-wrap card-container mx-1">
         <div className="card" onClick={e=>this.rotateCard(e)}>
           <div className="front flex justify-center items-center text-2xl">
