@@ -2,18 +2,20 @@
     "profile":[
         {
         "title": "Developer",
-        "WID": "Currently enrolled as a Full Stack Development student at Lambda School I spend hours a day learning new technologies to add to my development stack. I've fallen in love with the process of starting a week knowing nothing, grappling with the concept and then finishing my week knowing more about this topic than I could have ever imagined. I look forward to continuing this passion for problem solving and self growth as my career as a developer grows.  ",
+        "WID": "Currently enrolled as a Full Stack Development student at Lambda School I spend hours a day learning new technologies to add to my development stack.",
+        "Heart": "I love coding because anything I conceptualize I can build. Sure, I might struggle or need to learn something new to achieve the desired result, but this challenge is worth the payoff everytime.",
         "tools": ["HTML5", "CSS3", "CSS Preprocessors", "Javascript", "React", "Redux",  "Node", "Express", "Git", "Netlify", "Heroku"]
         },
         {
         "title": "Content Creator",
-        "WID": "A description of what i do as a CC",
+        "WID": "Currently I blog and tweet about my journey as aspiring web developer. Prior, as a member of the National Basketball Production Team, I curated social posts and edited video content.",
+        "Heart":"Telling stories is a core human value. In today's world of constant content and stimulation, being able to convey a story  creatively and clearly is an incredibly difficult challenge that I enjoy grappling with.", 
         "tools": ["Adobe Creative Suite", "Final Cut X", "Writing", "Editing"]
         },
         {
         "title": "Person",
-        "WID": "A description of what i do as a Person",
-        "tools": ["Banjo player", "Die hard Jets, Mets, & Knicks Fan", "Amateur Chef", "Fitness enthusiast", "Pizza Lover"]
+        "WID": "When I'm not coding you can find me trying to teach myself the banjo, watching whatever NY Sports team is in season or cooking a fun meal with friends.",
+        "tools": ["Learning the Bango", "Rooting for the Jets, Mets, & Knicks Fan", "Experimenting with new recipes", "Keeping in shape"]
         }
     ],
     "projects": [

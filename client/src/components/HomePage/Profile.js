@@ -16,39 +16,45 @@ class Profile extends Component {
     const selected = this.props.profile.find(bio => bio.title === e.target.innerText);
     this.setState({selected: {...selected}})
   }
-  activeClass = e =>{
-
+  rotateCard = e =>{
+    console.log(e.target.parentNode)
+    e.target.parentNode.classList.toggle('isFlipped')
   }
+ 
   render() {
     return (
-    <div className="w-3/5 mx-auto mt-12"> 
-      <h3 className="text-3xl">Hello!</h3>
-      <p className="text-2xl">I'm Matt, a New Yorker on a mission.</p>
-      <p className="text-2xl">Formerly trained in content creation and now web development <br/> I'm here to bring a unique spark to your team.</p>
-      <div className="flex mt-8">
-        <div className="w-1/2">
-          <img src={ProfileImg} alt=""/>
+      <div className="flex w-3/5 mx-auto my-24">
+      <div className="flex flex-wrap card-container mx-1">
+        <div className="card" onClick={e=>this.rotateCard(e)}>
+          <div className="front flex justify-center items-center text-2xl">
+            <h2>Developer</h2>
+          </div>
+          <div className="back flex justify-center items-center text-xl">
+            <p>Description</p>
+          </div>
         </div>
-      <div className="w-1/2 border border-blue">
-        <div className="flex w-full justify-around h-12">
-          <button onClick={e=> this.setSelected(e)}className={this.state.selected.title === "Developer" ? "active border border-white w-full bg-blue text-white" : "border border-white w-full bg-blue text-white"}>Developer</button>
-          <button onClick={e=> this.setSelected(e)} className={this.state.selected.title === "Content Creator" ? 'active border border-white w-full bg-blue text-white' : "border border-white w-full bg-blue text-white"}>Content Creator</button>
-          <button onClick={e=> this.setSelected(e)} className={this.state.selected.title === "Person" ? 'active border border-white w-full bg-blue text-white' : "border border-white w-full bg-blue text-white"}>Person</button>
+      </div>
+      <div className="flex flex-wrap card-container mx-1">
+        <div className="card" onClick={e=>this.rotateCard(e)}>
+          <div className="front flex justify-center items-center text-2xl">
+            <h2 className="text-center p-1">Content Creator</h2>
+          </div>
+          <div className="back flex justify-center items-center text-xl">
+            <p>Description</p>
+          </div>
         </div>
-        <div className="my-2">
-          <h3 className="mx-auto w-90 text-2xl">What I do</h3>
-          <p className="mx-auto w-4/5 leading-normal	">{this.state.selected.WID}</p>
-        </div>
-        <div className="my-2">
-          <h3 className="">Tools I Use: </h3>
-          <div className="flex flex-wrap">
-          {this.state.selected.tools.map((tool, i) => {return i === this.state.selected.tools.length-1 ? <p className="mx-1">{tool}</p> : <p className="mx-1">{tool},</p> })}
+      </div>
+      <div className="flex flex-wrap card-container mx-1">
+        <div className="card" onClick={e=>this.rotateCard(e)}>
+          <div className="front flex justify-center items-center text-2xl">
+            <h2>Person</h2>
+          </div>
+          <div className="back flex justify-center items-center text-xl">
+            <p>Description</p>
           </div>
         </div>
       </div>
       </div>
-    </div>
-  
     )
   }
 }
