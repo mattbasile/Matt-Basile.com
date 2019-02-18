@@ -1,34 +1,25 @@
 import React from 'react'
-import Logo1 from '../imgs/guidr_screen.png'
-import Logo2 from '../imgs/pokedex_screen.png'
-import Logo3 from '../imgs/dbz_screen.png'
 
 
 export default function Card(props) {
-  
+  console.log(props)
   return (
     <>
-       <div className="border shadow-md card">
-            <h4 className="text-center flex justify-center items-center py-4 text-2xl border borer-blue bg-blue text-white rounded rounded-b-none">
-              {props.card.title.length > 26 ? props.card.title.slice(0, 24) + "..." : props.card.title}
-              
-            </h4>
-            <div className="card-img">
-              <img src={props.isArticle ? props.card.thumbnail : props.card.title === "Guidr" ? Logo1 : props.card.title === "Pokedex Redux" ? Logo2 : Logo3} alt=""/>
-            </div>
-            <div className="w-full self-end">
-            {props.isArticle ? (<a target="blank" href={props.card.link} className="flex items-center justify-center text-white w-full h-12 bg-green">More</a>) 
-            : ( <>
-                <button className="mx-auto w-full h-12 bg-green">More</button>
-                <div className="flex w-full h-12">
-                    <a href={props.card.url} target="blank" className="flex items-center justify-center text-white w-1/2 bg-orange">Live</a>
-                    <a href={props.card.githubURL} target="blank" className="flex items-center justify-center text-white w-1/2 bg-purple">Code</a>
-                </div>
-                </>
-                )
-              }
-            </div>
-         </div>
+       <div className="w-full flex">
+         <div className="w-1/4 h-full border-r-4 ">
+          <div className="w-full h-48 flex justify-center items-center my-8 border border-red overflow-hidden">
+            <img  src={props.card.thumbnail} alt=""/>
+          </div>
+        </div>
+          <div className="w-3/4 border border-blue h-48 my-8 flex justify-around flex-col">
+              <h3 className="text-3xl text-center"><a className="text-black" href={props.card.guid} target="blank">{props.card.title}</a></h3>
+              <div className="text-center">
+              {props.card.categories.map(category =>{
+                return <span className="my-1 inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2">{category}</span>
+              })}
+              </div>
+          </div>
+       </div>
     </>
   )
 }
