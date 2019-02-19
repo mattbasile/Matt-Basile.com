@@ -6,12 +6,11 @@ export default function Card(props) {
   return (
     <>
        <div className="w-full flex">
-         <div className="w-1/4 h-full border-r-4 ">
-          <div className="w-full h-48 flex justify-center items-center my-8 border border-red overflow-hidden">
+          <div className="w-1/4 h-48 flex justify-center items-center my-8 left-article overflow-hidden">
             <img  src={props.card.thumbnail} alt=""/>
           </div>
-        </div>
-          <div className="w-3/4 border border-blue h-48 my-8 flex justify-around flex-col">
+  
+          <div className="w-3/4 right-article h-48 my-8 flex justify-around flex-col">
               <h3 className="text-3xl text-center"><a className="text-black" href={props.card.guid} target="blank">{props.card.title}</a></h3>
               <div className="text-center">
               {props.card.categories.map(category =>{

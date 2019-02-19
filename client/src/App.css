@@ -22,32 +22,26 @@
     flex-direction: column;
     justify-content: space-between;
 }
-.card-img{
-    /* height:200px; */
-    overflow:hidden;
-    margin: 0 auto;
-}
+
 .text-overflow{
     text-overflow: ellipsis;
+}
+.header button{
+    border: 5px solid black;
 }
 .header-font{
   font-family: "Yantramanav";
   font-size: 190px;
-  color:white;
 }
 .sub-header{
     font-family: "Yantramanav";
     font-size: 40px;
-    color:white;
 }
-.bio-square{
-    height: 480px;
-}
+
 .header{
-    background: url('./components/imgs/bg-left.png');
-    background-size: contain;
-    background-repeat: repeat;
-    
+    color: black;
+    border: 10px solid black;
+    background: beige;  
 }
 .card-container{
     position: relative;
@@ -61,22 +55,29 @@
     height: 100%;
     transform-style: preserve-3d;
     transition: all 0.5s ease;
+    /* border: 5px solid black; */
 }
 .card:hover{
   transform: scale(1.1);
   cursor: pointer;
   z-index: 1;
 }
-
+.front:hover{
+    background-color: #2779BD;
+    color: white;
+}
 .card.isFlipped{
     transform: rotateY(180deg)
 }
-
 .front{
     position: absolute;
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
+    border: 7px solid black;
+    background: beige;  
+    font-family: 'Yantramanav';
+    font-size: 30px;
 }
   
 .back{
@@ -85,34 +86,62 @@
     height: 100%;
     backface-visibility: hidden;
     transform: rotateY(180deg);
+    border: 7px solid black;
+    background: beige;  
 }
 /* Projects */
 .project-container{
   height: 650px;
+  background: beige;  
+}
+.project-description-container{
+    border: 5px solid;
+    border-right: 3.5px solid black; 
+}
+.right-project-container{
+    border: 5px solid black;
+    border-left: 3.5px solid black;
 }
 .project-img-container{
   height: 450px;
+  border-bottom: 7px solid;
 }
 .project-cubes{
     height: 200px;
 }
-.see-more{
-    height: 200px; 
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.project-link{
+    border-right: 7px solid black;
+    cursor: pointer;
 }
-.see-more button{
-    width: 65%;
+.project-link-text{
+    font-size: 30px;
+    font-family: "Yantramanav";
+    letter-spacing: 1.1px;
+}
+.selected-project{
+    background: #2779bd;
+    color: white;
 }
 
-.project-description{
-    justify-content: space-evenly;
-    height: 450px;
+/* Articles */
+.divider{
+    border-right: 15px solid black;
+}
+.left-article{
+    border: 5px solid black;
+    border-radius: 7px 0px 0px 7px;
+}
+.right-article{
+    border: 5px solid black;
+    border-left: 0;
+    border-radius: 0px 7px 7px 0px;
+}
 
+
+.project-square{
+    background: beige;
+    border-top: 10px solid black;
+    border-right: 10px solid black;
+    border-bottom: 0;
 }
-.project-description p{
-    line-height: 3rem;
-    padding: 0 30px;
-}
+

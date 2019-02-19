@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Contact() {
   return (
-    <div className="w-4/5 my-8 text-center mx-auto">
+    <div id="contact" className="w-4/5 my-8 text-center mx-auto">
       <h2 className="text-4xl">Let's make something great together!</h2>
       <div className="flex w-3/5 mx-auto justify-around">
         <a href="#">

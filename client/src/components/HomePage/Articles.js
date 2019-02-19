@@ -17,7 +17,7 @@ class Articles extends Component {
     }
   render() {
     return (
-        <div>
+        <div id="articles">
         <div className="w-3/5 mx-auto my-24">
          <div className="flex mt-8 flex-wrap">
          {this.props.articles.map( article =>{

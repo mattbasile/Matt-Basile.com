@@ -24,9 +24,9 @@
             "img": "",
             "url": "https://guidr2.netlify.com/",
             "githubURL": "https://github.com/guidr-app-lion-team/guidr-client-deploy",
-            "description": "What I did during Guidr",
-            "WIL": "what I learned over that time",
-            "tools": ["JSX", "TailwindCSS", "CSS", "Javascript", "React", "Redux", "Git", "Netlify"],
+            "description": "During Lambda's inaugural Build Week I served as Lead Frontend Developer for my team. Our objective was to build a functional app for back-country guides to catalog their trips and connect with other guides. Over four 12+ hour days we constructed this fun application.",
+            "takeaways": "Working on a team of complete strangers is never easy. Include a tight deadline and it becomes even more difficult. Luckily, my team and I were great at communicating. This provided an immense amount of clarity allowing us to know our progress and delegate work appropriately.",
+            "tools": [ "React", "Redux", "Axios", "TailwindCSS", "CSS", "Javascript", "Git", "Netlify", "Team Work"],
             "screenshots": [],
             "thumbnail": "../imgs/logo-final.png"
         },
@@ -35,9 +35,9 @@
             "img": "",
             "url": "https://basile-pokedex.netlify.com/",
             "githubURL": "https://github.com/mattbasile/Pokedex-Deploy",
-            "description": "What I did during Pokedex",
-            "WIL": "what I learned over that time",
-            "tools": ["JSX", "TailwindCSS", "CSS", "Javascript", "React", "Redux", "Git", "Netlify"],
+            "description": "When we first began learning about APIs I was introduced to the Pokemon API. The following weekend, I wanted to reinforce my new React, Redux and Axios knowledge, so I decided to create a Pokedex to do so. Childhood me would be very proud.",
+            "takeaways": "Building this project was a fantastic introduction to the world of APIs. Specifically, how to massage data we receive and using that massaged data to them make alternate requests. It also allowed me to work on my loading screen animations.",
+            "tools": [ "React", "Redux", "Axios", "TailwindCSS", "CSS", "Javascript", "Git", "Netlify"],
             "screenshots": [],
             "thumbnail": "../imgs/logo-final.png"
         },
@@ -46,9 +46,10 @@
             "img": "",
             "url": "https://mattbasile.github.io/",
             "githubURL": "https://github.com/mattbasile/DragonballZ-Battle",
-            "description": "What I did during DBZ Battles",
+            "description": "One of our first projects at Lambda was to build a Javascript battle game in our console. I took this concept and proceeded to build out a DBZ themed game that moved from the console to the DOM.",
+            "takeaways": "At this time constructors and classes were relatively new to me in JS. Getting to reinforce them in an engaging project like this was incredibly fun. Also, the amount of DOM manipulation involved was super interesting and if I ever need to make a vanilla JS app again I'm confident I can.",
             "WIL": "what I learned over that time",
-            "tools": [ "HTML5", "CSS", "LESS", "Javascript", "Git", "Github Pages"],
+            "tools": [ "HTML5", "CSS", "CSS Animations", "LESS", "Javascript", "Git", "Github Pages"],
             "screenshots": [],
             "thumbnail": "../imgs/logo-final.png"
         }
