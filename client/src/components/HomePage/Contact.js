@@ -2,14 +2,19 @@ import React from 'react'
 
 export default function Contact() {
   return (
-    <div className="w-2/5 my-8 text-center mx-auto shadow-md py-24">
-      <h2 className="text-4xl">Want More?</h2>
-      <h3 className="text-2xl font-normal">I'd love to chat!</h3>
-      <div className="flex items-center justify-center"> 
-        <i className="far fa-envelope text-3xl mr-2"></i>
-        <a className="text-lg" href="mailto:matthewbasile2@gmail.com" target="_top"> matthewbasile2@gmail.com</a>
+    <div className="w-4/5 my-8 text-center mx-auto">
+      <h2 className="text-4xl">Let's make something great together!</h2>
+      <div className="flex w-3/5 mx-auto justify-around">
+        <a href="#">
+          <i className="text-5xl my-8 text-black far fa-envelope"></i>
+        </a>
+        <a href="#">
+        <i className="text-5xl my-8 text-blue-light fab fa-twitter"></i>
+        </a>
+        <a href="#">
+        <i className="text-5xl my-8 text-black fab fa-github"></i>
+        </a>
       </div>
-     
     </div>
   )
 }

@@ -3,7 +3,7 @@ import '../../App.css'
 
 function Header(props) {
   return (
-    <div className="w-full h-75 flex justify-center items-center header">
+    <div className="w-full h-75 flex justify-center items-center bg-blue-darker">
           <div>
           <div>
             <h1 className="header-font ">Matt Basile</h1>
