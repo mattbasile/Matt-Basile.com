@@ -17,8 +17,9 @@ class Articles extends Component {
     }
   render() {
     return (
-        <div id="articles">
-        <div className="w-3/5 mx-auto my-24">
+        <div className="mt-24" id="articles">
+        <h2 className="text-center text-5xl">Articles</h2>
+        <div className="w-4/5 mx-auto mb-24">
          <div className="flex mt-8 flex-wrap">
          {this.props.articles.map( article =>{
             return <Card isArticle={this.state.isArticle} card={article}/>

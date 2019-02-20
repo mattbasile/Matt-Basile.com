@@ -1,40 +1,21 @@
+
 .h-75 {
     height: 90vh;
 }
 .w-90{
  width:90%;
 }
-.active{
-    background-color: white;
-    color: #3490DC;
-    border: 1px solid #3490DC;
-}
-.more-btn{
-    margin-bottom: 10px;
-}
+/* Header Styles */
 
-.card{
-    width: 30%;
-    margin: 2% 1%;
-    height: 375px;
-    border-radius: 3px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.text-overflow{
-    text-overflow: ellipsis;
-}
 .header button{
     border: 5px solid black;
 }
 .header-font{
-  font-family: "Yantramanav";
+  font-family: "Yantramanav", sans-serif;
   font-size: 190px;
 }
 .sub-header{
-    font-family: "Yantramanav";
+    font-family: "Yantramanav", sans-serif;
     font-size: 40px;
 }
 
@@ -43,20 +24,22 @@
     border: 10px solid black;
     background: beige;  
 }
+
+/* Profile Styles */
+.card{
+    margin: 2% 1%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+}
 .card-container{
     position: relative;
     height: 350px;
     width: 100%;
 }
 
-.card{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    transform-style: preserve-3d;
-    transition: all 0.5s ease;
-    /* border: 5px solid black; */
-}
 .card:hover{
   transform: scale(1.1);
   cursor: pointer;
@@ -88,6 +71,7 @@
     transform: rotateY(180deg);
     border: 7px solid black;
     background: beige;  
+    font-family: 'Montserrat', sans-serif;
 }
 /* Projects */
 .project-container{
@@ -96,7 +80,9 @@
 }
 .project-description-container{
     border: 5px solid;
-    border-right: 3.5px solid black; 
+    border-right: 3.5px solid black;
+    font-family: 'Montserrat', sans-serif;
+
 }
 .right-project-container{
     border: 5px solid black;
@@ -122,11 +108,13 @@
     background: #2779bd;
     color: white;
 }
-
-/* Articles */
-.divider{
-    border-right: 15px solid black;
+.project-square{
+    background: beige;
+    border-top: 10px solid black;
+    border-right: 10px solid black;
+    border-bottom: 0;
 }
+/* Articles */
 .left-article{
     border: 5px solid black;
     border-radius: 7px 0px 0px 7px;
@@ -135,13 +123,8 @@
     border: 5px solid black;
     border-left: 0;
     border-radius: 0px 7px 7px 0px;
-}
-
-
-.project-square{
     background: beige;
-    border-top: 10px solid black;
-    border-right: 10px solid black;
-    border-bottom: 0;
 }
+
+
 

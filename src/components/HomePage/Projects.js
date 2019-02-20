@@ -20,7 +20,9 @@ class Projects extends Component {
   render() {
   
     return (
-      <div id="projects" className="w-4/5 mx-auto project-container flex">
+      <div className="mt-48" id="projects">
+      <h2 className="text-center text-5xl my-8">Projects</h2>
+      <div className="w-4/5 mx-auto project-container flex">
       <div className="w-1/3 h-full flex flex-col items-center project-description-container leading-normal">
    
         <h3 className="text-3xl mt-8 sub-header">{this.state.selected.title}</h3>
@@ -53,8 +55,8 @@ class Projects extends Component {
             DBZ Battles
           </div>
         </div>
-
       </div>
+    </div>
     </div>
     )
   }
