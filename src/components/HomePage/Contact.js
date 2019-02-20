@@ -2,8 +2,9 @@ import React from 'react'
 
 export default function Contact() {
   return (
-    <div id="contact" className="w-4/5 mt-48 text-center mx-auto bg-pink py-24">
-      <h2 className="text-4xl">Let's make something great together!</h2>
+    <div id="contact" className="w-4/5 mt-48 text-center mx-auto bg-pink py-6 h-auto flex flex-col justify-between">
+     <div>
+      <h2 className="text-4xl main-font">Let's make something great together!</h2>
       <div className="flex w-3/5 mx-auto justify-around">
         <a target="blank" href="mailto:matthewbasile2@gmail.com?Subject=Hey Matt! Just saw your Website...">
           <i className="text-5xl my-8 far fa-envelope text-red-light hover:text-red "></i>
@@ -21,6 +22,11 @@ export default function Contact() {
         <i className="text-5xl my-8 text-grey-dark hover:text-grey-darker fab fa-angellist"></i>
         </a>
       </div>
-    </div>
+   </div> 
+   <div className="body-font">
+      <h3  className="mt-12 mb-4">This site was made with <i className="heart fas fa-heart text-red-light"></i> by Matt Basile </h3>
+      <p> {(new Date()).getFullYear()}  © Matt Basile. All Rights Reserved. </p>
+   </div>
+</div>
   )
 }
