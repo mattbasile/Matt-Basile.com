@@ -2,7 +2,7 @@
     "profile":[
         {
         "title": "Developer",
-        "WID": "Currently enrolled as a Full Stack Development student at Lambda School I spend hours a day learning new technologies to add to my development stack.",
+        "WID": "Currently enrolled as a Full Stack Development student at Lambda School I spend hours a day programming and adding new technologies to add to my development stack.",
         "Heart": "I love coding because anything I conceptualize I can build. Sure, I might struggle or need to learn something new to achieve the desired result, but this challenge is worth the payoff everytime.",
         "tools": ["HTML5", "CSS3", "CSS Preprocessors", "Javascript", "React", "Redux",  "Node", "Express", "Git", "Netlify", "Heroku"]
         },

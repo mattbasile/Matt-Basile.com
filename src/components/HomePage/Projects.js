@@ -29,9 +29,10 @@ class Projects extends Component {
         <p className="my-2 px-4">{this.state.selected.description}</p>
         <p className="my-2 px-4">{this.state.selected.takeaways}</p>
         <div className="flex flex-wrap px-4 my-4">
-          {this.state.selected.tools.map((tool, i)=> <span key={i} className="mr-2 underline">{tool}</span>)}
+        <h4 className=" mr-2 ">Tools Used:</h4>
+          {this.state.selected.tools.map((tool, i)=> {return i === this.state.selected.tools.length-1 ? <span key={i} className="mr-2 ">{tool}</span> : <span key={i} className="mr-2 ">{tool},</span>})}
         </div>
-        <div className="flex text-5xl w-4/5 justify-center">
+        <div className="flex text-5xl w-4/5 justify-center mb-6">
         <a target="blank" className="mx-2 text-blue-dark" href={this.state.selected.url}>
           <i className="fas fa-globe"></i>
         </a>

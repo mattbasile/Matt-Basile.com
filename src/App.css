@@ -136,5 +136,9 @@
     background: beige;
 }
 
+/* Contact */
 
-
+#contact{
+    border: 10px solid black;
+    background: beige;   
+}
