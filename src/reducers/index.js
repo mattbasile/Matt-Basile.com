@@ -23,21 +23,21 @@ export default (state = initialState, { type, payload }) => {
       isFetchingArticles: true
     };
     case FETCH_ARTICLES_SUCCESS:
-    console.log(payload)
     const articlesList = payload.items.filter(article => {
       return article.categories.length > 0 ? article : null
       }
     )
-    console.log(articlesList)
     return{
       ...state,
       error: null,
       isFetchingArticles: false,
       articles: articlesList
     };
-    case FETCH_ARTICLES_START:
+    case FETCH_ARTICLES_FAIL:
     return{
-
+      ...state,
+      error: payload,
+      isFetchingArticles: false
     };
   default:
     return state

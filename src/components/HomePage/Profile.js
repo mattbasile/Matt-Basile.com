@@ -1,7 +1,6 @@
-
 import React, { Component } from 'react'
 import {connect} from 'react-redux'
-import ProfileImg from '../../profile.png'
+
 
 
 class Profile extends Component {
@@ -17,7 +16,6 @@ class Profile extends Component {
     this.setState({selected: {...selected}})
   }
   rotateCard = e =>{
-    console.log(e.target.parentNode)
     e.target.parentNode.classList.toggle('isFlipped')
   }
  

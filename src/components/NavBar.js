@@ -6,7 +6,7 @@ export default function NavBar() {
       <a className="mx-4 text-xl text-black hover:underline no-underline font-bold" href="#profile">Profile</a>
       <a className="mx-4 text-xl text-black hover:underline no-underline font-bold" href="#projects">Projects</a>
       <a className="mx-4 text-xl text-black hover:underline no-underline font-bold" href="#articles">Articles</a>
-      <a href="contact" className="mx-4 text-xl text-black hover:underline no-underline font-bold" href="#contact">Contact</a>
+      <a className="mx-4 text-xl text-black hover:underline no-underline font-bold" href="#contact">Contact</a>
     </div>
   )
 }

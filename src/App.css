@@ -1,9 +1,15 @@
-
+/* General */
 .h-75 {
     height: 90vh;
 }
 .w-90{
  width:90%;
+}
+.main-font{
+    font-family: "Yantramanav", sans-serif;
+}
+.body-font{
+    font-family: "Montserrat", sans-serif;
 }
 /* Header Styles */
 
@@ -16,9 +22,8 @@
 }
 .sub-header{
     font-family: "Yantramanav", sans-serif;
-    font-size: 40px;
+    font-size: 50px;
 }
-
 .header{
     color: black;
     border: 10px solid black;
@@ -79,13 +84,13 @@
   background: beige;  
 }
 .project-description-container{
-    border: 5px solid;
+    border: 7px solid;
     border-right: 3.5px solid black;
     font-family: 'Montserrat', sans-serif;
 
 }
 .right-project-container{
-    border: 5px solid black;
+    border: 7px solid black;
     border-left: 3.5px solid black;
 }
 .project-img-container{
@@ -99,10 +104,15 @@
     border-right: 7px solid black;
     cursor: pointer;
 }
+.project-link:last-child{
+    border-right: 0
+}
 .project-link-text{
     font-size: 30px;
-    font-family: "Yantramanav";
-    letter-spacing: 1.1px;
+    font-family: "Montserrat";
+    /* letter-spacing: 1px; */
+    padding: 0 5px;
+    text-align: center;
 }
 .selected-project{
     background: #2779bd;

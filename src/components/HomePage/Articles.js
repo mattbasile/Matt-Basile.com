@@ -22,7 +22,7 @@ class Articles extends Component {
         <div className="w-4/5 mx-auto mb-24">
          <div className="flex mt-8 flex-wrap">
          {this.props.articles.map( article =>{
-            return <Card isArticle={this.state.isArticle} card={article}/>
+            return <Card key={article.pubDate}isArticle={this.state.isArticle} card={article}/>
         })}
          </div>
         </div>

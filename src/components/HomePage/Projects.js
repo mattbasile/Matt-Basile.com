@@ -25,11 +25,11 @@ class Projects extends Component {
       <div className="w-4/5 mx-auto project-container flex">
       <div className="w-1/3 h-full flex flex-col items-center project-description-container leading-normal">
    
-        <h3 className="text-3xl mt-8 sub-header">{this.state.selected.title}</h3>
+        <h3 className="text-3xl mt-6 sub-header">{this.state.selected.title}</h3>
         <p className="my-2 px-4">{this.state.selected.description}</p>
         <p className="my-2 px-4">{this.state.selected.takeaways}</p>
         <div className="flex flex-wrap px-4 my-4">
-          {this.state.selected.tools.map(tool => <span class="mr-2 underline">{tool}</span>)}
+          {this.state.selected.tools.map((tool, i)=> <span key={i} className="mr-2 underline">{tool}</span>)}
         </div>
         <div className="flex text-5xl w-4/5 justify-center">
         <a target="blank" className="mx-2 text-blue-dark" href={this.state.selected.url}>
@@ -42,7 +42,9 @@ class Projects extends Component {
       </div>
       <div className="w-2/3 right-project-container flex flex-col justify-between">
         <div className="h-auto  project-img-container flex justify-center items-center">
-          <img src={this.state.selected.title === 'Guidr' ? PhotoOne : this.state.selected.title === 'Pokedex Redux' ? PhotoTwo : PhotoThree}/>
+          <img src={this.state.selected.title === 'Guidr' ? PhotoOne : this.state.selected.title === 'Pokedex Redux' ? PhotoTwo : PhotoThree}
+          alt={this.state.selected.title === 'Guidr' ? 'Image of Guidr App' : this.state.selected.title === 'Pokedex Redux' ? 'Image of Pokedex App' : 'Image of Dragon Ball Z App'}
+          />
         </div>
         <div className="flex project-cubes">
           <div onClick={e=>this.changeSelected(e)}className={this.state.selected.title ==="Guidr" ? "selected-project w-1/3 flex justify-center items-center project-link project-link-text" : "w-1/3 flex justify-center items-center project-link project-link-text"}>
