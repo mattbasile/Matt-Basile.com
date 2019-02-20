@@ -25,7 +25,7 @@ class Projects extends Component {
       <div className="w-4/5 mx-auto project-container flex">
       <div className="w-1/3 h-full flex flex-col items-center project-description-container leading-normal">
    
-        <h3 className="text-3xl mt-6 sub-header">{this.state.selected.title}</h3>
+        <h3 className="text-3xl mt-2 sub-header">{this.state.selected.title}</h3>
         <p className="my-2 px-4">{this.state.selected.description}</p>
         <p className="my-2 px-4">{this.state.selected.takeaways}</p>
         <div className="flex flex-wrap px-4 my-4">
