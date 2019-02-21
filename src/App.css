@@ -247,7 +247,7 @@
 @media(max-width: 400px){
     .project-container,
     #profile,
-    #contact,
+    #contact
     {
         width: 98%;
     }
