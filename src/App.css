@@ -251,8 +251,20 @@
     {
         width: 98%;
     }
-    .header-text-container{
-        height: auto;
+    .header{
+        height: 50vh;
+        padding-bottom: 50px;
     }
-    
+    .header-font{
+        font-size: 60px;
+    }
+    .header-text-container{
+        height: 90%;
+    }
+    .nav-bar{
+        height: 50px;
+    }
+    .nav-bar a{
+        font-size: 15px;
+    }
 }
