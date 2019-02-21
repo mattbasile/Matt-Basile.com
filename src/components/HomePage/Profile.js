@@ -21,7 +21,7 @@ class Profile extends Component {
  
   render() {
     return (
-      <div id="profile" className="flex flex-wrap w-4/5 mx-auto my-24">
+      <div id="profile" className="flex flex-wrap justify-center w-4/5 mx-auto my-24">
       <div className="flex my-4 flex-wrap card-container mx-1">
         <div className="card shadow-lg" onClick={e=>this.rotateCard(e)}>
           <div className="front flex justify-center items-center text-2xl ">

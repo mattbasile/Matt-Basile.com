@@ -206,7 +206,7 @@
     
 }
 /* Articles BreakPoints */
-@media (max-width: 770px) {
+@media (max-width: 767px) {
     .left-article{
         border: 3.5px solid;
         border-bottom: none;
