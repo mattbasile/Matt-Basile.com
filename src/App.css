@@ -234,5 +234,8 @@
     #profile{
         width: 98%;
     }
+    .header-text-container{
+        height: auto;
+    }
     
 }
