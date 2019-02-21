@@ -203,8 +203,22 @@
     .card-container{
         width: 100%;
     }
-  
+    
 }
+/* Articles BreakPoints */
+@media (max-width: 770px) {
+    .left-article{
+        border: 3.5px solid;
+        border-bottom: none;
+        border-radius: 7px 7px 0px 0px;
+    }
+    .right-article{
+        border: 3.5px solid;
+        border-top: none;
+        border-radius: 0px 0px 7px 7px;
+    }
+}
+
 /* Projects BreakPoint */
 @media (max-width: 1000px) {
     .project-container{
@@ -229,9 +243,12 @@
         padding: 15px 0;
     }
 }
+/* Small Screen */
 @media(max-width: 400px){
     .project-container,
-    #profile{
+    #profile,
+    #contact,
+    {
         width: 98%;
     }
     .header-text-container{
