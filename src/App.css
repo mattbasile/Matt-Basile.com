@@ -42,7 +42,7 @@
 .card-container{
     position: relative;
     height: 350px;
-    width: 100%;
+    width: 30%;
 }
 
 .card:hover{
@@ -80,25 +80,24 @@
 }
 /* Projects */
 .project-container{
-  height: 650px;
   background: beige;  
 }
 .project-description-container{
     border: 7px solid;
     border-right: 3.5px solid black;
     font-family: 'Montserrat', sans-serif;
-
 }
 .right-project-container{
+    height: auto;
     border: 7px solid black;
     border-left: 3.5px solid black;
 }
 .project-img-container{
-  height: 450px;
+  height: 75%;
   border-bottom: 7px solid;
 }
 .project-cubes{
-    height: 200px;
+   height: 25%;
 }
 .project-link{
     border-right: 7px solid black;
@@ -187,3 +186,53 @@
   }
   
   
+  /* Media Queries */
+@media (max-width: 900px) {
+    .header{
+        height: 75vh;
+    }
+    .header-text-container{
+        height: 400px;
+    }
+    .header-font{
+        font-size: 100px;
+    }
+    .sub-header{
+        font-size: 30px;
+    }
+    .card-container{
+        width: 100%;
+    }
+  
+}
+/* Projects BreakPoint */
+@media (max-width: 1000px) {
+    .project-container{
+        flex-direction: column-reverse;
+    }
+    .right-project-container{
+        flex-direction: column-reverse;
+        border: 3.5px solid black;
+        border-bottom: 1.5px solid;
+    }
+    .project-description-container{
+        border: 3.5px solid;
+        border-top: 1.5px solid;
+    }
+    .project-img-container{
+        display: none;
+        border: none;
+    }
+    .project-link{
+        font-size: 1.2rem;
+        border-right: 3.5px solid black;
+        padding: 15px 0;
+    }
+}
+@media(max-width: 400px){
+    .project-container,
+    #profile{
+        width: 98%;
+    }
+    
+}

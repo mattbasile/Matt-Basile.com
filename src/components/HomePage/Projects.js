@@ -22,9 +22,8 @@ class Projects extends Component {
     return (
       <div className="mt-48" id="projects">
       <h2 className="text-center text-5xl my-8">Projects</h2>
-      <div className="w-4/5 mx-auto project-container flex">
-      <div className="w-1/3 h-full flex flex-col items-center project-description-container leading-normal">
-   
+      <div className="w-4/5 mx-auto project-container flex flex-wrap">
+      <div className="w-full lg:w-1/3 h-auto lg:h-full flex flex-col items-center project-description-container leading-normal">
         <h3 className="text-3xl mt-2 sub-header">{this.state.selected.title}</h3>
         <p className="my-2 px-4">{this.state.selected.description}</p>
         <p className="my-2 px-4">{this.state.selected.takeaways}</p>
@@ -41,7 +40,7 @@ class Projects extends Component {
         </a>
         </div>
       </div>
-      <div className="w-2/3 right-project-container flex flex-col justify-between">
+      <div className="w-full lg:w-2/3 right-project-container flex flex-col justify-between">
         <div className="h-auto  project-img-container flex justify-center items-center">
           <img src={this.state.selected.title === 'Guidr' ? PhotoOne : this.state.selected.title === 'Pokedex Redux' ? PhotoTwo : PhotoThree}
           alt={this.state.selected.title === 'Guidr' ? 'Image of Guidr App' : this.state.selected.title === 'Pokedex Redux' ? 'Image of Pokedex App' : 'Image of Dragon Ball Z App'}
